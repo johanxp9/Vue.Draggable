@@ -3,7 +3,7 @@
     <draggable class="dragArea" tag="ul" :list="tasks" :group="{ name: 'g1' }">
       <li v-for="el in tasks" :key="el.name">
         <p>{{ el.name }}</p>
-        <nested-draggable :tasks="el.tasks" />
+        <!-- <nested-draggable :tasks="el.tasks" /> -->
       </li>
     </draggable>
   </div>
@@ -21,7 +21,7 @@ export default {
   components: {
     draggable
   },
-  name: "nested-draggable"
+  name: "files"
 };
 </script>
 <style scoped>
